@@ -6,7 +6,7 @@ library(bacenR)
 library(dplyr)
 
 # 1. Configurações do que queremos baixar
-anos <- 2000:2014
+anos <- 1994:2014
 meses <- c(3, 6, 9, 12) # Trimestres (março, junho, setembro, dezembro)
 tipo_inst <- 2          # 1 = Conglomerados Prudenciais e Instituições Independentes
 
