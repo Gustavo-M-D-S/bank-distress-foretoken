@@ -1,0 +1,407 @@
+======================================================================
+RELATÓRIO DE PADRONIZAÇÃO IFData (2000-2024)
+Gerado em: 2026-09-03 14:42
+======================================================================
+
+Arquivos encontrados        : 444
+  formato snake (2000-2013)  : 208
+  formato pascal (2014-2024) : 176
+  formato ranking (1994-99)  : 60 (fora do escopo)
+
+Períodos distintos           : 22
+Instituições distintas       : 1759
+Registros (conta-inst-período): 2018863
+Saldo NaN removido           : 5736
+Chaves duplicadas no pivot   : 0
+
+Contas por relatório:
+  Ativo                        ->  16 contas
+  Demonstração de Resultado    ->  30 contas
+  Passivo                      ->  23 contas
+
+Tipo de instituição (por era do arquivo):
+  2014-2024 -> tipo 1: 2018863 registros
+
+Arquivos ignorados (semestral 1994-1999):
+  - IFDATA_199412_Ativo.csv
+  - IFDATA_199412_Passivo.csv
+  - IFDATA_199412_Resultado.csv
+  - IFDATA_199412_Resumo.csv
+  - IFDATA_199506_Ativo.csv
+  - IFDATA_199506_Passivo.csv
+  - IFDATA_199506_Resultado.csv
+  - IFDATA_199506_Resumo.csv
+  - IFDATA_199512_Ativo.csv
+  - IFDATA_199512_Passivo.csv
+  - IFDATA_199512_Resultado.csv
+  - IFDATA_199512_Resumo.csv
+  - IFDATA_199606_Ativo.csv
+  - IFDATA_199606_Passivo.csv
+  - IFDATA_199606_Resultado.csv
+  - IFDATA_199606_Resumo.csv
+  - IFDATA_199612_Ativo.csv
+  - IFDATA_199612_Passivo.csv
+  - IFDATA_199612_Resultado.csv
+  - IFDATA_199612_Resumo.csv
+  - IFDATA_199706_Ativo.csv
+  - IFDATA_199706_Passivo.csv
+  - IFDATA_199706_Resultado.csv
+  - IFDATA_199706_Resumo.csv
+  - IFDATA_199712_Ativo.csv
+  - IFDATA_199712_Passivo.csv
+  - IFDATA_199712_Resultado.csv
+  - IFDATA_199712_Resumo.csv
+  - IFDATA_199806_Ativo.csv
+  - IFDATA_199806_Passivo.csv
+  - IFDATA_199806_Resultado.csv
+  - IFDATA_199806_Resumo.csv
+  - IFDATA_199812_Ativo.csv
+  - IFDATA_199812_Passivo.csv
+  - IFDATA_199812_Resultado.csv
+  - IFDATA_199812_Resumo.csv
+  - IFDATA_199906_Ativo.csv
+  - IFDATA_199906_Passivo.csv
+  - IFDATA_199906_Resultado.csv
+  - IFDATA_199906_Resumo.csv
+  - IFDATA_199912_Ativo.csv
+  - IFDATA_199912_Passivo.csv
+  - IFDATA_199912_Resultado.csv
+  - IFDATA_199912_Resumo.csv
+  - IFDATA_200006_Passivo.csv
+  - IFDATA_200009_Resultado.csv
+  - IFDATA_200103_Ativo.csv
+  - IFDATA_200403_Resultado.csv
+  - IFDATA_200409_Passivo.csv
+  - IFDATA_200503_Passivo.csv
+  - IFDATA_200503_Resultado.csv
+  - IFDATA_200506_Ativo.csv
+  - IFDATA_200509_Resultado.csv
+  - IFDATA_200512_Passivo.csv
+  - IFDATA_200606_Resultado.csv
+  - IFDATA_200609_Ativo.csv
+  - IFDATA_200709_Resultado.csv
+  - IFDATA_200803_Resultado.csv
+  - IFDATA_201012_Passivo.csv
+  - IFDATA_201309_Ativo.csv
+
+ERROS DE LEITURA:
+  - IFDATA_200003_Ativo.csv: IFDATA_200003_Ativo.csv: 459/30617 saldos não convertidos
+  - IFDATA_200003_Passivo.csv: IFDATA_200003_Passivo.csv: 567/37821 saldos não convertidos
+  - IFDATA_200003_Resultado.csv: IFDATA_200003_Resultado.csv: 810/54030 saldos não convertidos
+  - IFDATA_200003_Resumo.csv: IFDATA_200003_Resumo.csv: 162/10806 saldos não convertidos
+  - IFDATA_200006_Ativo.csv: IFDATA_200006_Ativo.csv: 493/30685 saldos não convertidos
+  - IFDATA_200006_Resultado.csv: IFDATA_200006_Resultado.csv: 870/54150 saldos não convertidos
+  - IFDATA_200006_Resumo.csv: IFDATA_200006_Resumo.csv: 174/10830 saldos não convertidos
+  - IFDATA_200009_Ativo.csv: IFDATA_200009_Ativo.csv: 476/30770 saldos não convertidos
+  - IFDATA_200009_Passivo.csv: IFDATA_200009_Passivo.csv: 588/38010 saldos não convertidos
+  - IFDATA_200009_Resumo.csv: IFDATA_200009_Resumo.csv: 168/10860 saldos não convertidos
+  - IFDATA_200012_Ativo.csv: IFDATA_200012_Ativo.csv: 459/30719 saldos não convertidos
+  - IFDATA_200012_Passivo.csv: IFDATA_200012_Passivo.csv: 567/37947 saldos não convertidos
+  - IFDATA_200012_Resultado.csv: IFDATA_200012_Resultado.csv: 810/54210 saldos não convertidos
+  - IFDATA_200012_Resumo.csv: IFDATA_200012_Resumo.csv: 3128/16263 saldos não convertidos
+  - IFDATA_200103_Passivo.csv: IFDATA_200103_Passivo.csv: 588/38325 saldos não convertidos
+  - IFDATA_200103_Resultado.csv: IFDATA_200103_Resultado.csv: 840/54750 saldos não convertidos
+  - IFDATA_200103_Resumo.csv: IFDATA_200103_Resumo.csv: 1679/16425 saldos não convertidos
+  - IFDATA_200106_Ativo.csv: IFDATA_200106_Ativo.csv: 510/31229 saldos não convertidos
+  - IFDATA_200106_Passivo.csv: IFDATA_200106_Passivo.csv: 630/38577 saldos não convertidos
+  - IFDATA_200106_Resultado.csv: IFDATA_200106_Resultado.csv: 900/55110 saldos não convertidos
+  - IFDATA_200106_Resumo.csv: IFDATA_200106_Resumo.csv: 1683/16533 saldos não convertidos
+  - IFDATA_200109_Ativo.csv: IFDATA_200109_Ativo.csv: 510/31518 saldos não convertidos
+  - IFDATA_200109_Passivo.csv: IFDATA_200109_Passivo.csv: 630/38934 saldos não convertidos
+  - IFDATA_200109_Resultado.csv: IFDATA_200109_Resultado.csv: 900/55620 saldos não convertidos
+  - IFDATA_200109_Resumo.csv: IFDATA_200109_Resumo.csv: 1721/16686 saldos não convertidos
+  - IFDATA_200112_Ativo.csv: IFDATA_200112_Ativo.csv: 527/31603 saldos não convertidos
+  - IFDATA_200112_Passivo.csv: IFDATA_200112_Passivo.csv: 651/39039 saldos não convertidos
+  - IFDATA_200112_Resultado.csv: IFDATA_200112_Resultado.csv: 930/55770 saldos não convertidos
+  - IFDATA_200112_Resumo.csv: IFDATA_200112_Resumo.csv: 442/16731 saldos não convertidos
+  - IFDATA_200203_Ativo.csv: IFDATA_200203_Ativo.csv: 527/31841 saldos não convertidos
+  - IFDATA_200203_Passivo.csv: IFDATA_200203_Passivo.csv: 651/39333 saldos não convertidos
+  - IFDATA_200203_Resultado.csv: IFDATA_200203_Resultado.csv: 930/56190 saldos não convertidos
+  - IFDATA_200203_Resumo.csv: IFDATA_200203_Resumo.csv: 464/16857 saldos não convertidos
+  - IFDATA_200206_Ativo.csv: IFDATA_200206_Ativo.csv: 561/31858 saldos não convertidos
+  - IFDATA_200206_Passivo.csv: IFDATA_200206_Passivo.csv: 693/39354 saldos não convertidos
+  - IFDATA_200206_Resultado.csv: IFDATA_200206_Resultado.csv: 990/56220 saldos não convertidos
+  - IFDATA_200206_Resumo.csv: IFDATA_200206_Resumo.csv: 475/16866 saldos não convertidos
+  - IFDATA_200209_Ativo.csv: IFDATA_200209_Ativo.csv: 493/31994 saldos não convertidos
+  - IFDATA_200209_Passivo.csv: IFDATA_200209_Passivo.csv: 609/39522 saldos não convertidos
+  - IFDATA_200209_Resultado.csv: IFDATA_200209_Resultado.csv: 870/56460 saldos não convertidos
+  - IFDATA_200209_Resumo.csv: IFDATA_200209_Resumo.csv: 446/16938 saldos não convertidos
+  - IFDATA_200212_Ativo.csv: IFDATA_200212_Ativo.csv: 391/31994 saldos não convertidos
+  - IFDATA_200212_Passivo.csv: IFDATA_200212_Passivo.csv: 483/39522 saldos não convertidos
+  - IFDATA_200212_Resultado.csv: IFDATA_200212_Resultado.csv: 690/56460 saldos não convertidos
+  - IFDATA_200212_Resumo.csv: IFDATA_200212_Resumo.csv: 388/16938 saldos não convertidos
+  - IFDATA_200303_Ativo.csv: IFDATA_200303_Ativo.csv: 391/32011 saldos não convertidos
+  - IFDATA_200303_Passivo.csv: IFDATA_200303_Passivo.csv: 483/39543 saldos não convertidos
+  - IFDATA_200303_Resultado.csv: IFDATA_200303_Resultado.csv: 690/56490 saldos não convertidos
+  - IFDATA_200303_Resumo.csv: IFDATA_200303_Resumo.csv: 359/16947 saldos não convertidos
+  - IFDATA_200306_Ativo.csv: IFDATA_200306_Ativo.csv: 510/32334 saldos não convertidos
+  - IFDATA_200306_Passivo.csv: IFDATA_200306_Passivo.csv: 630/39942 saldos não convertidos
+  - IFDATA_200306_Resultado.csv: IFDATA_200306_Resultado.csv: 900/57060 saldos não convertidos
+  - IFDATA_200306_Resumo.csv: IFDATA_200306_Resumo.csv: 435/17118 saldos não convertidos
+  - IFDATA_200309_Ativo.csv: IFDATA_200309_Ativo.csv: 408/32691 saldos não convertidos
+  - IFDATA_200309_Passivo.csv: IFDATA_200309_Passivo.csv: 504/40383 saldos não convertidos
+  - IFDATA_200309_Resultado.csv: IFDATA_200309_Resultado.csv: 720/57690 saldos não convertidos
+  - IFDATA_200309_Resumo.csv: IFDATA_200309_Resumo.csv: 396/17307 saldos não convertidos
+  - IFDATA_200312_Ativo.csv: IFDATA_200312_Ativo.csv: 459/32589 saldos não convertidos
+  - IFDATA_200312_Passivo.csv: IFDATA_200312_Passivo.csv: 567/40257 saldos não convertidos
+  - IFDATA_200312_Resultado.csv: IFDATA_200312_Resultado.csv: 810/57510 saldos não convertidos
+  - IFDATA_200312_Resumo.csv: IFDATA_200312_Resumo.csv: 399/17253 saldos não convertidos
+  - IFDATA_200403_Ativo.csv: IFDATA_200403_Ativo.csv: 374/32385 saldos não convertidos
+  - IFDATA_200403_Passivo.csv: IFDATA_200403_Passivo.csv: 462/40005 saldos não convertidos
+  - IFDATA_200403_Resumo.csv: IFDATA_200403_Resumo.csv: 357/17145 saldos não convertidos
+  - IFDATA_200406_Ativo.csv: IFDATA_200406_Ativo.csv: 442/32130 saldos não convertidos
+  - IFDATA_200406_Passivo.csv: IFDATA_200406_Passivo.csv: 546/39690 saldos não convertidos
+  - IFDATA_200406_Resultado.csv: IFDATA_200406_Resultado.csv: 780/56700 saldos não convertidos
+  - IFDATA_200406_Resumo.csv: IFDATA_200406_Resumo.csv: 399/17010 saldos não convertidos
+  - IFDATA_200409_Ativo.csv: IFDATA_200409_Ativo.csv: 459/32283 saldos não convertidos
+  - IFDATA_200409_Resultado.csv: IFDATA_200409_Resultado.csv: 810/56970 saldos não convertidos
+  - IFDATA_200409_Resumo.csv: IFDATA_200409_Resumo.csv: 398/17091 saldos não convertidos
+  - IFDATA_200412_Ativo.csv: IFDATA_200412_Ativo.csv: 442/32096 saldos não convertidos
+  - IFDATA_200412_Passivo.csv: IFDATA_200412_Passivo.csv: 546/39648 saldos não convertidos
+  - IFDATA_200412_Resultado.csv: IFDATA_200412_Resultado.csv: 780/56640 saldos não convertidos
+  - IFDATA_200412_Resumo.csv: IFDATA_200412_Resumo.csv: 380/16992 saldos não convertidos
+  - IFDATA_200503_Ativo.csv: IFDATA_200503_Ativo.csv: 357/32045 saldos não convertidos
+  - IFDATA_200503_Resumo.csv: IFDATA_200503_Resumo.csv: 342/16965 saldos não convertidos
+  - IFDATA_200506_Passivo.csv: IFDATA_200506_Passivo.csv: 378/39522 saldos não convertidos
+  - IFDATA_200506_Resultado.csv: IFDATA_200506_Resultado.csv: 540/56460 saldos não convertidos
+  - IFDATA_200506_Resumo.csv: IFDATA_200506_Resumo.csv: 316/16938 saldos não convertidos
+  - IFDATA_200509_Ativo.csv: IFDATA_200509_Ativo.csv: 272/32181 saldos não convertidos
+  - IFDATA_200509_Passivo.csv: IFDATA_200509_Passivo.csv: 336/39753 saldos não convertidos
+  - IFDATA_200509_Resumo.csv: IFDATA_200509_Resumo.csv: 293/17037 saldos não convertidos
+  - IFDATA_200512_Ativo.csv: IFDATA_200512_Ativo.csv: 306/32113 saldos não convertidos
+  - IFDATA_200512_Resultado.csv: IFDATA_200512_Resultado.csv: 540/56670 saldos não convertidos
+  - IFDATA_200512_Resumo.csv: IFDATA_200512_Resumo.csv: 308/17001 saldos não convertidos
+  - IFDATA_200603_Ativo.csv: IFDATA_200603_Ativo.csv: 289/31960 saldos não convertidos
+  - IFDATA_200603_Passivo.csv: IFDATA_200603_Passivo.csv: 357/39480 saldos não convertidos
+  - IFDATA_200603_Resultado.csv: IFDATA_200603_Resultado.csv: 510/56400 saldos não convertidos
+  - IFDATA_200603_Resumo.csv: IFDATA_200603_Resumo.csv: 314/16920 saldos não convertidos
+  - IFDATA_200606_Ativo.csv: IFDATA_200606_Ativo.csv: 357/32028 saldos não convertidos
+  - IFDATA_200606_Passivo.csv: IFDATA_200606_Passivo.csv: 441/39564 saldos não convertidos
+  - IFDATA_200606_Resumo.csv: IFDATA_200606_Resumo.csv: 349/16956 saldos não convertidos
+  - IFDATA_200609_Passivo.csv: IFDATA_200609_Passivo.csv: 315/39564 saldos não convertidos
+  - IFDATA_200609_Resultado.csv: IFDATA_200609_Resultado.csv: 450/56520 saldos não convertidos
+  - IFDATA_200609_Resumo.csv: IFDATA_200609_Resumo.csv: 290/16956 saldos não convertidos
+  - IFDATA_200612_Ativo.csv: IFDATA_200612_Ativo.csv: 408/31994 saldos não convertidos
+  - IFDATA_200612_Passivo.csv: IFDATA_200612_Passivo.csv: 504/39522 saldos não convertidos
+  - IFDATA_200612_Resultado.csv: IFDATA_200612_Resultado.csv: 720/56460 saldos não convertidos
+  - IFDATA_200612_Resumo.csv: IFDATA_200612_Resumo.csv: 361/16938 saldos não convertidos
+  - IFDATA_200703_Ativo.csv: IFDATA_200703_Ativo.csv: 442/31824 saldos não convertidos
+  - IFDATA_200703_Passivo.csv: IFDATA_200703_Passivo.csv: 546/39312 saldos não convertidos
+  - IFDATA_200703_Resultado.csv: IFDATA_200703_Resultado.csv: 780/56160 saldos não convertidos
+  - IFDATA_200703_Resumo.csv: IFDATA_200703_Resumo.csv: 383/16848 saldos não convertidos
+  - IFDATA_200706_Ativo.csv: IFDATA_200706_Ativo.csv: 442/31909 saldos não convertidos
+  - IFDATA_200706_Passivo.csv: IFDATA_200706_Passivo.csv: 546/39417 saldos não convertidos
+  - IFDATA_200706_Resultado.csv: IFDATA_200706_Resultado.csv: 780/56310 saldos não convertidos
+  - IFDATA_200706_Resumo.csv: IFDATA_200706_Resumo.csv: 379/16893 saldos não convertidos
+  - IFDATA_200709_Ativo.csv: IFDATA_200709_Ativo.csv: 459/31994 saldos não convertidos
+  - IFDATA_200709_Passivo.csv: IFDATA_200709_Passivo.csv: 567/39522 saldos não convertidos
+  - IFDATA_200709_Resumo.csv: IFDATA_200709_Resumo.csv: 596/16938 saldos não convertidos
+  - IFDATA_200712_Ativo.csv: IFDATA_200712_Ativo.csv: 493/31824 saldos não convertidos
+  - IFDATA_200712_Passivo.csv: IFDATA_200712_Passivo.csv: 609/39312 saldos não convertidos
+  - IFDATA_200712_Resultado.csv: IFDATA_200712_Resultado.csv: 870/56160 saldos não convertidos
+  - IFDATA_200712_Resumo.csv: IFDATA_200712_Resumo.csv: 439/16848 saldos não convertidos
+  - IFDATA_200803_Ativo.csv: IFDATA_200803_Ativo.csv: 408/31688 saldos não convertidos
+  - IFDATA_200803_Passivo.csv: IFDATA_200803_Passivo.csv: 504/39144 saldos não convertidos
+  - IFDATA_200803_Resumo.csv: IFDATA_200803_Resumo.csv: 368/16776 saldos não convertidos
+  - IFDATA_200806_Ativo.csv: IFDATA_200806_Ativo.csv: 391/31722 saldos não convertidos
+  - IFDATA_200806_Passivo.csv: IFDATA_200806_Passivo.csv: 483/39186 saldos não convertidos
+  - IFDATA_200806_Resultado.csv: IFDATA_200806_Resultado.csv: 690/55980 saldos não convertidos
+  - IFDATA_200806_Resumo.csv: IFDATA_200806_Resumo.csv: 374/16794 saldos não convertidos
+  - IFDATA_200809_Ativo.csv: IFDATA_200809_Ativo.csv: 425/31824 saldos não convertidos
+  - IFDATA_200809_Passivo.csv: IFDATA_200809_Passivo.csv: 525/39312 saldos não convertidos
+  - IFDATA_200809_Resultado.csv: IFDATA_200809_Resultado.csv: 750/56160 saldos não convertidos
+  - IFDATA_200809_Resumo.csv: IFDATA_200809_Resumo.csv: 492/16848 saldos não convertidos
+  - IFDATA_200812_Ativo.csv: IFDATA_200812_Ativo.csv: 459/31722 saldos não convertidos
+  - IFDATA_200812_Passivo.csv: IFDATA_200812_Passivo.csv: 567/39186 saldos não convertidos
+  - IFDATA_200812_Resultado.csv: IFDATA_200812_Resultado.csv: 810/55980 saldos não convertidos
+  - IFDATA_200812_Resumo.csv: IFDATA_200812_Resumo.csv: 468/16794 saldos não convertidos
+  - IFDATA_200903_Ativo.csv: IFDATA_200903_Ativo.csv: 408/31620 saldos não convertidos
+  - IFDATA_200903_Passivo.csv: IFDATA_200903_Passivo.csv: 504/39060 saldos não convertidos
+  - IFDATA_200903_Resultado.csv: IFDATA_200903_Resultado.csv: 720/55800 saldos não convertidos
+  - IFDATA_200903_Resumo.csv: IFDATA_200903_Resumo.csv: 423/16740 saldos não convertidos
+  - IFDATA_200906_Ativo.csv: IFDATA_200906_Ativo.csv: 391/31365 saldos não convertidos
+  - IFDATA_200906_Passivo.csv: IFDATA_200906_Passivo.csv: 483/38745 saldos não convertidos
+  - IFDATA_200906_Resultado.csv: IFDATA_200906_Resultado.csv: 690/55350 saldos não convertidos
+  - IFDATA_200906_Resumo.csv: IFDATA_200906_Resumo.csv: 402/16605 saldos não convertidos
+  - IFDATA_200909_Ativo.csv: IFDATA_200909_Ativo.csv: 391/31161 saldos não convertidos
+  - IFDATA_200909_Passivo.csv: IFDATA_200909_Passivo.csv: 483/38493 saldos não convertidos
+  - IFDATA_200909_Resultado.csv: IFDATA_200909_Resultado.csv: 690/54990 saldos não convertidos
+  - IFDATA_200909_Resumo.csv: IFDATA_200909_Resumo.csv: 410/16497 saldos não convertidos
+  - IFDATA_200912_Ativo.csv: IFDATA_200912_Ativo.csv: 425/30923 saldos não convertidos
+  - IFDATA_200912_Passivo.csv: IFDATA_200912_Passivo.csv: 525/38199 saldos não convertidos
+  - IFDATA_200912_Resultado.csv: IFDATA_200912_Resultado.csv: 750/54570 saldos não convertidos
+  - IFDATA_200912_Resumo.csv: IFDATA_200912_Resumo.csv: 416/16371 saldos não convertidos
+  - IFDATA_201003_Ativo.csv: IFDATA_201003_Ativo.csv: 442/30872 saldos não convertidos
+  - IFDATA_201003_Passivo.csv: IFDATA_201003_Passivo.csv: 546/38136 saldos não convertidos
+  - IFDATA_201003_Resultado.csv: IFDATA_201003_Resultado.csv: 780/54480 saldos não convertidos
+  - IFDATA_201003_Resumo.csv: IFDATA_201003_Resumo.csv: 425/16344 saldos não convertidos
+  - IFDATA_201006_Ativo.csv: IFDATA_201006_Ativo.csv: 561/30753 saldos não convertidos
+  - IFDATA_201006_Passivo.csv: IFDATA_201006_Passivo.csv: 693/37989 saldos não convertidos
+  - IFDATA_201006_Resultado.csv: IFDATA_201006_Resultado.csv: 990/54270 saldos não convertidos
+  - IFDATA_201006_Resumo.csv: IFDATA_201006_Resumo.csv: 482/16281 saldos não convertidos
+  - IFDATA_201009_Ativo.csv: IFDATA_201009_Ativo.csv: 544/30719 saldos não convertidos
+  - IFDATA_201009_Passivo.csv: IFDATA_201009_Passivo.csv: 672/37947 saldos não convertidos
+  - IFDATA_201009_Resultado.csv: IFDATA_201009_Resultado.csv: 960/54210 saldos não convertidos
+  - IFDATA_201009_Resumo.csv: IFDATA_201009_Resumo.csv: 477/16263 saldos não convertidos
+  - IFDATA_201012_Ativo.csv: IFDATA_201012_Ativo.csv: 544/30345 saldos não convertidos
+  - IFDATA_201012_Resultado.csv: IFDATA_201012_Resultado.csv: 960/53550 saldos não convertidos
+  - IFDATA_201012_Resumo.csv: IFDATA_201012_Resumo.csv: 715/16065 saldos não convertidos
+  - IFDATA_201103_Ativo.csv: IFDATA_201103_Ativo.csv: 527/30192 saldos não convertidos
+  - IFDATA_201103_Passivo.csv: IFDATA_201103_Passivo.csv: 651/37296 saldos não convertidos
+  - IFDATA_201103_Resultado.csv: IFDATA_201103_Resultado.csv: 930/53280 saldos não convertidos
+  - IFDATA_201103_Resumo.csv: IFDATA_201103_Resumo.csv: 424/15984 saldos não convertidos
+  - IFDATA_201106_Ativo.csv: IFDATA_201106_Ativo.csv: 629/30158 saldos não convertidos
+  - IFDATA_201106_Passivo.csv: IFDATA_201106_Passivo.csv: 777/37254 saldos não convertidos
+  - IFDATA_201106_Resultado.csv: IFDATA_201106_Resultado.csv: 1110/53220 saldos não convertidos
+  - IFDATA_201106_Resumo.csv: IFDATA_201106_Resumo.csv: 476/15966 saldos não convertidos
+  - IFDATA_201109_Ativo.csv: IFDATA_201109_Ativo.csv: 629/29920 saldos não convertidos
+  - IFDATA_201109_Passivo.csv: IFDATA_201109_Passivo.csv: 777/36960 saldos não convertidos
+  - IFDATA_201109_Resultado.csv: IFDATA_201109_Resultado.csv: 1110/52800 saldos não convertidos
+  - IFDATA_201109_Resumo.csv: IFDATA_201109_Resumo.csv: 478/15840 saldos não convertidos
+  - IFDATA_201112_Ativo.csv: IFDATA_201112_Ativo.csv: 544/29444 saldos não convertidos
+  - IFDATA_201112_Passivo.csv: IFDATA_201112_Passivo.csv: 672/36372 saldos não convertidos
+  - IFDATA_201112_Resultado.csv: IFDATA_201112_Resultado.csv: 960/51960 saldos não convertidos
+  - IFDATA_201112_Resumo.csv: IFDATA_201112_Resumo.csv: 419/15588 saldos não convertidos
+  - IFDATA_201203_Ativo.csv: IFDATA_201203_Ativo.csv: 442/29121 saldos não convertidos
+  - IFDATA_201203_Passivo.csv: IFDATA_201203_Passivo.csv: 546/35973 saldos não convertidos
+  - IFDATA_201203_Resultado.csv: IFDATA_201203_Resultado.csv: 780/51390 saldos não convertidos
+  - IFDATA_201203_Resumo.csv: IFDATA_201203_Resumo.csv: 368/15417 saldos não convertidos
+  - IFDATA_201206_Ativo.csv: IFDATA_201206_Ativo.csv: 374/28849 saldos não convertidos
+  - IFDATA_201206_Passivo.csv: IFDATA_201206_Passivo.csv: 462/35637 saldos não convertidos
+  - IFDATA_201206_Resultado.csv: IFDATA_201206_Resultado.csv: 660/50910 saldos não convertidos
+  - IFDATA_201206_Resumo.csv: IFDATA_201206_Resumo.csv: 330/15273 saldos não convertidos
+  - IFDATA_201209_Ativo.csv: IFDATA_201209_Ativo.csv: 306/28730 saldos não convertidos
+  - IFDATA_201209_Passivo.csv: IFDATA_201209_Passivo.csv: 378/35490 saldos não convertidos
+  - IFDATA_201209_Resultado.csv: IFDATA_201209_Resultado.csv: 540/50700 saldos não convertidos
+  - IFDATA_201209_Resumo.csv: IFDATA_201209_Resumo.csv: 306/15210 saldos não convertidos
+  - IFDATA_201212_Ativo.csv: IFDATA_201212_Ativo.csv: 289/28475 saldos não convertidos
+  - IFDATA_201212_Passivo.csv: IFDATA_201212_Passivo.csv: 357/35175 saldos não convertidos
+  - IFDATA_201212_Resultado.csv: IFDATA_201212_Resultado.csv: 510/50250 saldos não convertidos
+  - IFDATA_201212_Resumo.csv: IFDATA_201212_Resumo.csv: 288/15075 saldos não convertidos
+  - IFDATA_201303_Ativo.csv: IFDATA_201303_Ativo.csv: 272/28271 saldos não convertidos
+  - IFDATA_201303_Passivo.csv: IFDATA_201303_Passivo.csv: 336/34923 saldos não convertidos
+  - IFDATA_201303_Resultado.csv: IFDATA_201303_Resultado.csv: 480/49890 saldos não convertidos
+  - IFDATA_201303_Resumo.csv: IFDATA_201303_Resumo.csv: 272/14967 saldos não convertidos
+  - IFDATA_201306_Ativo.csv: IFDATA_201306_Ativo.csv: 238/27999 saldos não convertidos
+  - IFDATA_201306_Passivo.csv: IFDATA_201306_Passivo.csv: 294/34587 saldos não convertidos
+  - IFDATA_201306_Resultado.csv: IFDATA_201306_Resultado.csv: 420/49410 saldos não convertidos
+  - IFDATA_201306_Resumo.csv: IFDATA_201306_Resumo.csv: 258/14823 saldos não convertidos
+  - IFDATA_201309_Passivo.csv: IFDATA_201309_Passivo.csv: 273/34335 saldos não convertidos
+  - IFDATA_201309_Resultado.csv: IFDATA_201309_Resultado.csv: 390/49050 saldos não convertidos
+  - IFDATA_201309_Resumo.csv: IFDATA_201309_Resumo.csv: 231/14715 saldos não convertidos
+  - IFDATA_201312_Ativo.csv: IFDATA_201312_Ativo.csv: 153/27353 saldos não convertidos
+  - IFDATA_201312_Passivo.csv: IFDATA_201312_Passivo.csv: 189/33789 saldos não convertidos
+  - IFDATA_201312_Resultado.csv: IFDATA_201312_Resultado.csv: 270/48270 saldos não convertidos
+  - IFDATA_201312_Resumo.csv: IFDATA_201312_Resumo.csv: 205/14481 saldos não convertidos
+  - IFDATA_201403_Ativo.csv: IFDATA_201403_Ativo.csv: 289/27285 saldos não convertidos
+  - IFDATA_201403_Passivo.csv: IFDATA_201403_Passivo.csv: 357/33705 saldos não convertidos
+  - IFDATA_201403_Resultado.csv: IFDATA_201403_Resultado.csv: 510/48150 saldos não convertidos
+  - IFDATA_201403_Resumo.csv: IFDATA_201403_Resumo.csv: 102/9630 saldos não convertidos
+  - IFDATA_201406_Ativo.csv: IFDATA_201406_Ativo.csv: 187/27081 saldos não convertidos
+  - IFDATA_201406_Passivo.csv: IFDATA_201406_Passivo.csv: 231/33453 saldos não convertidos
+  - IFDATA_201406_Resultado.csv: IFDATA_201406_Resultado.csv: 330/47790 saldos não convertidos
+  - IFDATA_201406_Resumo.csv: IFDATA_201406_Resumo.csv: 66/9558 saldos não convertidos
+  - IFDATA_201409_Ativo.csv: IFDATA_201409_Ativo.csv: 187/27030 saldos não convertidos
+  - IFDATA_201409_Passivo.csv: IFDATA_201409_Passivo.csv: 231/33390 saldos não convertidos
+  - IFDATA_201409_Resultado.csv: IFDATA_201409_Resultado.csv: 330/47700 saldos não convertidos
+  - IFDATA_201409_Resumo.csv: IFDATA_201409_Resumo.csv: 66/9540 saldos não convertidos
+  - IFDATA_201412_Ativo.csv: IFDATA_201412_Ativo.csv: 221/26724 saldos não convertidos
+  - IFDATA_201412_Passivo.csv: IFDATA_201412_Passivo.csv: 273/33012 saldos não convertidos
+  - IFDATA_201412_Resultado.csv: IFDATA_201412_Resultado.csv: 390/47160 saldos não convertidos
+  - IFDATA_201412_Resumo.csv: IFDATA_201412_Resumo.csv: 78/9432 saldos não convertidos
+  - IFDATA_201503_Ativo.csv: IFDATA_201503_Ativo.csv: 153/26469 saldos não convertidos
+  - IFDATA_201503_Passivo.csv: IFDATA_201503_Passivo.csv: 189/32697 saldos não convertidos
+  - IFDATA_201503_Resultado.csv: IFDATA_201503_Resultado.csv: 270/46710 saldos não convertidos
+  - IFDATA_201503_Resumo.csv: IFDATA_201503_Resumo.csv: 163/14013 saldos não convertidos
+  - IFDATA_201506_Ativo.csv: IFDATA_201506_Ativo.csv: 204/26146 saldos não convertidos
+  - IFDATA_201506_Passivo.csv: IFDATA_201506_Passivo.csv: 252/32298 saldos não convertidos
+  - IFDATA_201506_Resultado.csv: IFDATA_201506_Resultado.csv: 360/46140 saldos não convertidos
+  - IFDATA_201506_Resumo.csv: IFDATA_201506_Resumo.csv: 188/13842 saldos não convertidos
+  - IFDATA_201509_Ativo.csv: IFDATA_201509_Ativo.csv: 272/25942 saldos não convertidos
+  - IFDATA_201509_Passivo.csv: IFDATA_201509_Passivo.csv: 336/32046 saldos não convertidos
+  - IFDATA_201509_Resultado.csv: IFDATA_201509_Resultado.csv: 480/45780 saldos não convertidos
+  - IFDATA_201509_Resumo.csv: IFDATA_201509_Resumo.csv: 222/13734 saldos não convertidos
+  - IFDATA_201512_Ativo.csv: IFDATA_201512_Ativo.csv: 170/25653 saldos não convertidos
+  - IFDATA_201512_Passivo.csv: IFDATA_201512_Passivo.csv: 210/31689 saldos não convertidos
+  - IFDATA_201512_Resultado.csv: IFDATA_201512_Resultado.csv: 300/45270 saldos não convertidos
+  - IFDATA_201512_Resumo.csv: IFDATA_201512_Resumo.csv: 170/13581 saldos não convertidos
+  - IFDATA_201603_Ativo.csv: IFDATA_201603_Ativo.csv: 170/25466 saldos não convertidos
+  - IFDATA_201603_Passivo.csv: IFDATA_201603_Passivo.csv: 210/31458 saldos não convertidos
+  - IFDATA_201603_Resultado.csv: IFDATA_201603_Resultado.csv: 300/44940 saldos não convertidos
+  - IFDATA_201603_Resumo.csv: IFDATA_201603_Resumo.csv: 172/13482 saldos não convertidos
+  - IFDATA_201606_Ativo.csv: IFDATA_201606_Ativo.csv: 187/25279 saldos não convertidos
+  - IFDATA_201606_Passivo.csv: IFDATA_201606_Passivo.csv: 231/31227 saldos não convertidos
+  - IFDATA_201606_Resultado.csv: IFDATA_201606_Resultado.csv: 330/44610 saldos não convertidos
+  - IFDATA_201606_Resumo.csv: IFDATA_201606_Resumo.csv: 177/13383 saldos não convertidos
+  - IFDATA_201609_Ativo.csv: IFDATA_201609_Ativo.csv: 136/25007 saldos não convertidos
+  - IFDATA_201609_Passivo.csv: IFDATA_201609_Passivo.csv: 168/30891 saldos não convertidos
+  - IFDATA_201609_Resultado.csv: IFDATA_201609_Resultado.csv: 240/44130 saldos não convertidos
+  - IFDATA_201609_Resumo.csv: IFDATA_201609_Resumo.csv: 144/13239 saldos não convertidos
+  - IFDATA_201612_Resumo.csv: IFDATA_201612_Resumo.csv: 135/13050 saldos não convertidos
+  - IFDATA_201703_Ativo.csv: IFDATA_201703_Ativo.csv: 170/24463 saldos não convertidos
+  - IFDATA_201703_Passivo.csv: IFDATA_201703_Passivo.csv: 210/30219 saldos não convertidos
+  - IFDATA_201703_Resultado.csv: IFDATA_201703_Resultado.csv: 300/43170 saldos não convertidos
+  - IFDATA_201703_Resumo.csv: IFDATA_201703_Resumo.csv: 164/12951 saldos não convertidos
+  - IFDATA_201706_Ativo.csv: IFDATA_201706_Ativo.csv: 289/24225 saldos não convertidos
+  - IFDATA_201706_Passivo.csv: IFDATA_201706_Passivo.csv: 357/29925 saldos não convertidos
+  - IFDATA_201706_Resultado.csv: IFDATA_201706_Resultado.csv: 510/42750 saldos não convertidos
+  - IFDATA_201706_Resumo.csv: IFDATA_201706_Resumo.csv: 231/12825 saldos não convertidos
+  - IFDATA_201709_Ativo.csv: IFDATA_201709_Ativo.csv: 374/23970 saldos não convertidos
+  - IFDATA_201709_Passivo.csv: IFDATA_201709_Passivo.csv: 462/29610 saldos não convertidos
+  - IFDATA_201709_Resultado.csv: IFDATA_201709_Resultado.csv: 660/42300 saldos não convertidos
+  - IFDATA_201709_Resumo.csv: IFDATA_201709_Resumo.csv: 375/12690 saldos não convertidos
+  - IFDATA_201712_Resumo.csv: IFDATA_201712_Resumo.csv: 147/12555 saldos não convertidos
+  - IFDATA_201803_Resumo.csv: IFDATA_201803_Resumo.csv: 141/12510 saldos não convertidos
+  - IFDATA_201806_Resumo.csv: IFDATA_201806_Resumo.csv: 138/12393 saldos não convertidos
+  - IFDATA_201809_Resumo.csv: IFDATA_201809_Resumo.csv: 156/12240 saldos não convertidos
+  - IFDATA_201812_Resumo.csv: IFDATA_201812_Resumo.csv: 183/12177 saldos não convertidos
+  - IFDATA_201903_Ativo.csv: IFDATA_201903_Ativo.csv: 119/22763 saldos não convertidos
+  - IFDATA_201903_Passivo.csv: IFDATA_201903_Passivo.csv: 147/28119 saldos não convertidos
+  - IFDATA_201903_Resultado.csv: IFDATA_201903_Resultado.csv: 210/40170 saldos não convertidos
+  - IFDATA_201903_Resumo.csv: IFDATA_201903_Resumo.csv: 193/12051 saldos não convertidos
+  - IFDATA_201906_Resumo.csv: IFDATA_201906_Resumo.csv: 183/11934 saldos não convertidos
+  - IFDATA_201909_Resumo.csv: IFDATA_201909_Resumo.csv: 93/11844 saldos não convertidos
+  - IFDATA_201912_Resumo.csv: IFDATA_201912_Resumo.csv: 72/11718 saldos não convertidos
+  - IFDATA_202003_Resumo.csv: IFDATA_202003_Resumo.csv: 94/11682 saldos não convertidos
+  - IFDATA_202006_Resumo.csv: IFDATA_202006_Resumo.csv: 73/11655 saldos não convertidos
+  - IFDATA_202009_Resumo.csv: IFDATA_202009_Resumo.csv: 81/11718 saldos não convertidos
+  - IFDATA_202012_Ativo.csv: IFDATA_202012_Ativo.csv: 221/22202 saldos não convertidos
+  - IFDATA_202012_Passivo.csv: IFDATA_202012_Passivo.csv: 286/28732 saldos não convertidos
+  - IFDATA_202012_Resultado.csv: IFDATA_202012_Resultado.csv: 390/39180 saldos não convertidos
+  - IFDATA_202012_Resumo.csv: IFDATA_202012_Resumo.csv: 202/11754 saldos não convertidos
+  - IFDATA_202103_Ativo.csv: IFDATA_202103_Ativo.csv: 289/22219 saldos não convertidos
+  - IFDATA_202103_Passivo.csv: IFDATA_202103_Passivo.csv: 374/28754 saldos não convertidos
+  - IFDATA_202103_Resultado.csv: IFDATA_202103_Resultado.csv: 510/39210 saldos não convertidos
+  - IFDATA_202103_Resumo.csv: IFDATA_202103_Resumo.csv: 292/11763 saldos não convertidos
+  - IFDATA_202106_Ativo.csv: IFDATA_202106_Ativo.csv: 272/22304 saldos não convertidos
+  - IFDATA_202106_Passivo.csv: IFDATA_202106_Passivo.csv: 352/28864 saldos não convertidos
+  - IFDATA_202106_Resultado.csv: IFDATA_202106_Resultado.csv: 480/39360 saldos não convertidos
+  - IFDATA_202106_Resumo.csv: IFDATA_202106_Resumo.csv: 266/11808 saldos não convertidos
+  - IFDATA_202109_Ativo.csv: IFDATA_202109_Ativo.csv: 340/22270 saldos não convertidos
+  - IFDATA_202109_Passivo.csv: IFDATA_202109_Passivo.csv: 440/28820 saldos não convertidos
+  - IFDATA_202109_Resultado.csv: IFDATA_202109_Resultado.csv: 600/39300 saldos não convertidos
+  - IFDATA_202109_Resumo.csv: IFDATA_202109_Resumo.csv: 274/11790 saldos não convertidos
+  - IFDATA_202112_Resumo.csv: IFDATA_202112_Resumo.csv: 105/11799 saldos não convertidos
+  - IFDATA_202203_Resumo.csv: IFDATA_202203_Resumo.csv: 165/11898 saldos não convertidos
+  - IFDATA_202206_Ativo.csv: IFDATA_202206_Ativo.csv: 170/22593 saldos não convertidos
+  - IFDATA_202206_Passivo.csv: IFDATA_202206_Passivo.csv: 220/29238 saldos não convertidos
+  - IFDATA_202206_Resultado.csv: IFDATA_202206_Resultado.csv: 300/39870 saldos não convertidos
+  - IFDATA_202206_Resumo.csv: IFDATA_202206_Resumo.csv: 255/11961 saldos não convertidos
+  - IFDATA_202209_Ativo.csv: IFDATA_202209_Ativo.csv: 357/22678 saldos não convertidos
+  - IFDATA_202209_Passivo.csv: IFDATA_202209_Passivo.csv: 462/29348 saldos não convertidos
+  - IFDATA_202209_Resultado.csv: IFDATA_202209_Resultado.csv: 630/40020 saldos não convertidos
+  - IFDATA_202209_Resumo.csv: IFDATA_202209_Resumo.csv: 399/12006 saldos não convertidos
+  - IFDATA_202212_Resumo.csv: IFDATA_202212_Resumo.csv: 238/12096 saldos não convertidos
+  - IFDATA_202303_Resumo.csv: IFDATA_202303_Resumo.csv: 294/12159 saldos não convertidos
+  - IFDATA_202306_Resumo.csv: IFDATA_202306_Resumo.csv: 265/12222 saldos não convertidos
+  - IFDATA_202309_Resumo.csv: IFDATA_202309_Resumo.csv: 117/12168 saldos não convertidos
+  - IFDATA_202312_Resumo.csv: IFDATA_202312_Resumo.csv: 108/12159 saldos não convertidos
+  - IFDATA_202403_Resumo.csv: IFDATA_202403_Resumo.csv: 122/12240 saldos não convertidos
+  - IFDATA_202406_Resumo.csv: IFDATA_202406_Resumo.csv: 150/12231 saldos não convertidos
+  - IFDATA_202409_Resumo.csv: IFDATA_202409_Resumo.csv: 130/12285 saldos não convertidos
+  - IFDATA_202412_Ativo.csv: IFDATA_202412_Ativo.csv: 442/23341 saldos não convertidos
+  - IFDATA_202412_Passivo.csv: IFDATA_202412_Passivo.csv: 546/28833 saldos não convertidos
+  - IFDATA_202412_Resultado.csv: IFDATA_202412_Resultado.csv: 780/41190 saldos não convertidos
+  - IFDATA_202412_Resumo.csv: IFDATA_202412_Resumo.csv: 400/12357 saldos não convertidos
+
+FIM
